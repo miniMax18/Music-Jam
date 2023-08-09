@@ -28,7 +28,7 @@ function Galeria() {
       <Carousel cols={2} rows={1} gap={9} loop>
         {images.map((item, i) => (
            <Carousel.Item key={i}>
-           <img width="100%" src={item} className='rounded-xl'/>
+           <img alt={"zdj_"+(i+1)} width="100%" src={item} className='rounded-xl'/>
           </Carousel.Item>
         ))}
       </Carousel>

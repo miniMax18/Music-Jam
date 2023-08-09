@@ -15,12 +15,12 @@ function Hero() {
                     <p>Instytut Kultury Miejskiej</p>
                     <p>Gdańsk</p>
                 </div>
-                <a href="https://app.evenea.pl/event/musicjam2022/?" target='_blank'>
+                <a href="https://app.evenea.pl/event/musicjam2022/?" target='_blank' rel="noreferrer">
                 <button className='mt-2 sm:mt-0 font-normal bg-red-600 rounded-md px-4 py-1 md:py-2 hover:scale-105 duration-500 text-xl md:text-2xl lg:text-4xl'>Weź udział</button>
                 </a>
             </div> 
             <div className='mx-0 px-0 py-0 my-0 md:flex md:scale-70 lg:scale-100'>
-                <img src={hero} alt="hero image"/>
+                <img src={hero} alt="hero_image"/>
             </div>
         </div>
     </div>

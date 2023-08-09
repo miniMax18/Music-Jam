@@ -42,13 +42,13 @@ function ReuseMusic() {
           <p className='text-lg md:text-xl lg:text-2xl font-light pt-4'>W Medialab Gdańsk zrekonstruowaliśmy XVIII wieczne zaśpiewy gdańskich ulicznych sprzedawców
           - są do pobrania i wykorzystania podczas hackathonu - udostępnione na CC-BY-SA na <a
            href='http://pracownia.medialabgdansk.pl/rekonstrukcja-zaspiewow-gdanskich-wywolywaczy/' target='_blank'
-           className='font-normal underline'>link</a>
+           className='font-normal underline' rel="noreferrer">link</a>
           </p>
         </div>
         <h3 className='text-xl md:text-2xl lg:text-3xl pb-4 pt-6'>Skąd wziąć muzykę/nuty do wykorzystania:</h3>
         {links.map((item, i) => (
             <div key={i} className='flex text-[24px] py-2 font-light'>
-              <p className='text-lg md:text-xl lg:text-2xl'><a href={item.url} target='_blank' className='font-normal underline'>{item.link}</a>{item.text}</p>
+              <p className='text-lg md:text-xl lg:text-2xl'><a href={item.url} target='_blank' className='font-normal underline' rel="noreferrer">{item.link}</a>{item.text}</p>
             </div>
         ))}
     </div>

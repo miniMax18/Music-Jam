@@ -56,24 +56,24 @@ function Organizatorzy() {
     <div className='py-6 md:py-10 lg:py-16'>
         <h2 className='text-2xl md:text-3xl lg:text-4xl'>Organizatorzy</h2>
         <div className='flex py-4 justify-center'>
-          {Org.map((item) => (
-            <a href={item.link} target="_blank" key={item.id} className='px-3 sm:px-4 md:px-10'>
-              <img src={item.img} className='hover:scale-105 duration-300'/>
+          {Org.map((item, i) => (
+            <a href={item.link} target="_blank" key={item.id} className='px-3 sm:px-4 md:px-10' rel="noreferrer">
+              <img alt={"organizatorzy_"+i} src={item.img} className='hover:scale-105 duration-300'/>
             </a>
           ))}
         </div>
         <h2 className='text-2xl md:text-3xl lg:text-4xl'>Partnerzy</h2>
         <div className='flex py-4 justify-center max-h-40'>
           {Part.map((item, i) => (
-            <a href={item.link} target="_blank" key={i} className='px-2 sm:px-4 md:px-10'>
-              <img src={item.img} className='hover:scale-105 duration-300 object-scale-down h-28'/>
+            <a href={item.link} target="_blank" key={i} className='px-2 sm:px-4 md:px-10' rel="noreferrer">
+              <img alt={"partnerzy_"+i} src={item.img} className='hover:scale-105 duration-300 object-scale-down h-28'/>
             </a>
           ))}
         </div>
         <h2 className='py-4 text-2xl md:text-3xl lg:text-4xl'>Dokumenty</h2>
         <div className='grid sm:grid-cols-3 items-center mx-auto justify-center'>
             {Files.map((item) => (
-            <a href={item.link} target='_blank' key={item.id}>
+            <a href={item.link} target='_blank' key={item.id} rel="noreferrer">
               <div className='flex bg-slate-50 py-1 justify-center rounded-xl hover:scale-105 duration-500 items-center mx-4 shadow-md mb-4 sm:mb-0'>
                 <AiFillFilePdf size={60}/>
                 <p className='text-xl mt-4'>{item.text}</p>
